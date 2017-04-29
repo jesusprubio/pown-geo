@@ -50,7 +50,7 @@
     "eslint-plugin-json": "^1.2.0",
     "npm-check-updates": "^2.8.0",
     "nsp": "^2.1.0",
-    "pown-cli": "^0.2.0",
+    "pown-cli": "^0.3.0",
     "release-it": "^2.5.3",
     "tap": "^8.0.1"
   },
