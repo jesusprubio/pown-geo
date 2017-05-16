@@ -1,6 +1,6 @@
 {
   "name": "pown-geo",
-  "version": "0.1.0-beta.0",
+  "version": "0.1.0-beta.1",
   "description": "Pownage guaranteed",
   "main": "index.js",
   "scripts": {
@@ -29,7 +29,7 @@
   "contributors": [],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jesusprubio/ragnar/issues"
+    "url": "https://github.com/jesusprubio/pown-geo/issues"
   },
   "homepage": "https://github.com/pownjs/pown#readme",
   "pown": {

@@ -7,15 +7,10 @@
 
 'use strict';
 
-const getLoc = require('geoip-lite').lookup;
-const logger = require('pown-logger');
-const validator = require('pown-validator');
-
 let pkgName = require('./package').name;
 
 
 const defaults = '8.8.8.8';
-pkgName = pkgName.slice(5);
 
 
 exports.yargs = {
@@ -31,9 +26,16 @@ exports.yargs = {
   },
 
   handler: (argv = {}) => {
-    const rhost = argv.rhost || defaults;
+    /* eslint-disable global-require */
+    const getLoc = require('geoip-lite').lookup;
+    const logger = require('pown-logger');
+    const validator = require('pown-validator');
+    /* eslint-enable global-require */
 
-    logger.title(pkgName);
+
+    logger.title(this.yargs.command);
+
+    const rhost = argv.rhost || defaults;
 
     if (validator.isPrivateIp(rhost)) {
       logger.result('Private IP');
