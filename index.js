@@ -14,7 +14,7 @@ const defaults = '8.8.8.8';
 
 
 exports.yargs = {
-  command: pkgName,
+  command: 'geo',
   describe: 'Geolocate a host.',
 
   builder: {
