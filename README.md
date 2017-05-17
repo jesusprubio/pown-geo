@@ -36,7 +36,7 @@
 From the same directory as your project's package.json, install this module with the following command:
 
 ```sh
-npm install jesusprubio/pown-geo#0.1.0-beta.0 --save
+npm install jesusprubio/pown-geo#0.1.0-beta.1 --save
 ```
 
 Once that's done, you can invoke it like this:
